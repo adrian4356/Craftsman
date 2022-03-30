@@ -10,7 +10,6 @@
 }
 
 body{
-    margin: 0;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
@@ -21,25 +20,29 @@ body.dark{
     --bg-two-color: hsl(0, 0%, 20%);
 }
 
-.header{
+.header,
+.switches,
+.toggle-theme{
     display: flex;
     align-items: center;
+}
+
+.header,
+.toggle-theme{
     justify-content: center;
+}
+
+.header{
     height: 75px;
     padding: 0 1.5em;
     background-color: var(--bg-two-color);
 }
 
 .switches{
-    display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
 .toggle-theme{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
 }
 
